@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at left, #000 20%, #1ED760 400%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.spotify-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+
+.spotify-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.spotify-phone img {
+    height: 46rem;
+}
+
+.spotify-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-top: 70px;
+    margin-bottom: -50px;
+    border: 1px solid #1ED760;
+    border-radius: 4px;
+}
+
+
+.group:nth-child(1) {
+    max-height: 25em;
+
+
+}
+
+
+.spotify-logo {
+    height: 15rem;
+    margin-top: -60px;
+}
+
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -60px 0px 0px 0px;
+}
+
+
+.profile-photo img {
+    height: 8rem;
+}
+
+
+.spotify-login {
+    background-color: #1ED760;
+    color: #000;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+
+.spotify-logout {
+    color: #1ED760;
+    margin-top: 2rem;
+}
+
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+
+.link {
+    color: #1ED760;
+}
+
+.notaccount {
+    color: rgba(160, 160, 160);
+    margin: 5px;
+}
+
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px;
+    color: rgb(160, 160, 160)
+}
+
+
+.download {
+    display: flex;
+    width: 300%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: -50px 0px 0px 175px;
+}
+
+.app-download {
+    height: 9rem;
+    width: 13rem;
+    background-size: cover;
+}
+
+
+
+.app-download:nth-child(1) {
+    background-image: url(img/applegooglebutton.png);
+}
+
+
+
+/* MEDIAS QUERIES */
+
+
+@media (max-width: 1024px) {
+    body {
+        background: rgb(4, 30, 13);
+    }
+    .spotify-wrapper {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    body {
+        background: rgb(4, 30, 13);
+    }
+    .spotify-wrapper {
+        width: 90%;
+    }
+
+    .spotify-phone {
+        display: none;
+    }
+
+    .spotify-continue {
+        width: 100%;
+    }
+}
